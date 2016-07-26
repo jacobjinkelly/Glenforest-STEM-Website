@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <script type="text/javascript" src="http://www.google.com/jsapi" ></script>
+    <script async type="text/javascript">google.load("jquery", "1.3.2");</script>
+    <script async type="text/javascript" src="core.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="title" content="Glenforest STEM">
+    <meta name="description"
+        content="Glenforest STEM organizes STEM Conferences
+          and other events to encourage and expose students to the
+          educational and career pathways in the STEM fields.">
+    <meta name="author" content="Jacob Kelly">
+    <meta charset="utf-8">
+    <title>Glenforest STEM</title>
+  </head>
+  <body>
+    <a name="home" class="anchor"></a>
+
+    <!--NAV BAR-->
+    <div id="nav">
+      <div id="left">
+        <div id="logo">
+          <a href="#home" id="Home"><img src="img/logo.svg"></a>
+        </div>
+      </div>
+      <div id="right">
+        <div class="item">
+          <a href="#about" id="About">About</a>
+        </div>
+        <div class="item">
+          <a href="#conference" id="Conference">Conferences</a>
+        </div>
+        <div class="item">
+          <a href="#sponsor" id="Sponsor">Sponsors</a>
+        </div>
+        <div class="item">
+          <a href="#contact" id="Contact">Contact</a>
+        </div>
+        <div class="item">
+          <a href="events.html" id="Events">Events</a>
+        </div>
+      </div>
+    </div>
+
+    <!--HOME SECTION-->
+    <div class="section home" id="top">
+
+      <!--#title for JS to find position of title and add .scrolled to nav bar-->
+      <div id="title" style="line-height:100%;">
+        <h1 style="font-size:7em;">
+          Glenforest STEM</h1>
+        <div class="separator ucolored" id="utitle"></div>
+        <p style="font-size:2.5em;">Canadian Youth STEM Conference</p>
+        <p style="font-size:1.5em;">May 25, 2017 | Pearson Convention Center</p>
+      </div>
+      <div>
+        <a href="#about"><div id="arrow"></div></a>
+      </div>
+    </div>
+
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:700,500">
+      <link rel="stylesheet" type="text/css" href="https://afeld.github.io/emoji-css/emoji.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+    <!--ABOUT SECTION-->
+    <div class="section white">
+
+      <a name="about" class="anchor" id="ABOUT"></a>
+
+      <div>
+        <h1 class="fadeIn">About</h1>
+        <div class="separator uwhite fadeIn" id="uabout"></div>
+        <p class="fadeIn">Glenforest STEM organizes <a href="#conference">STEM Conferences</a>
+          and other <a href="events.html">events</a> to encourage and expose students to the
+          educational and career pathways in the STEM fields. Learn more about the upcoming
+          <a href="#conference2">Canadian Youth STEM Conference</a> on May 25, 2017 at the Pearson Convention Centre.
+        </p>
+        <h1 class="fadeIn">Meet the team</h1>
+        <div class="separator uwhite fadeIn" id="umeet"></div>
+        <p class="fadeIn">Glenforest STEM is a group of passionate
+            students from Glenforest Secondary School in the
+            International Baccalaureate, Enhanced, and Academic
+            streams. The team consists of a Core 5 Executive along
+            with Directors and their Associates.
+        </p>
+      </div>
+
+      <div id="execContainer">
+        <div class="exec" id="p1">
+          <div class="execPic">
+            <img src="img/jane.jpg" alt="Jane Jomy">
+          </div>
+          <p>Jane Jomy</p>
+          <p>Co-President</p>
+        </div>
+        <div class="exec" id="p2">
+          <div class="execPic">
+            <img src="img/twinkle.jpg" alt="Twinkle Mehta">
+          </div>
+          <p>Twinkle Mehta</p>
+          <p>Co-President</p>
+        </div>
+        <div class="exec" id="p3">
+          <div class="execPic">
+            <img src="img/marah.jpg" alt="Marah Abdelkader">
+          </div>
+          <p>Marah Abdelkader</p>
+          <p>Vice-President</p>
+        </div>
+        <div class="exec" id="p4">
+          <div class="execPic">
+            <img src="img/simone.jpg" alt="Simone Aria">
+          </div>
+          <p>Simone Aria</p>
+          <p>Vice-President</p>
+        </div>
+        <div class="exec" id="p5">
+          <div class="execPic">
+            <img src="img/gabriel.jpg" alt="Gabriel Yeung">
+          </div>
+          <p>Gabriel Yeung</p>
+          <p>Vice-President</p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="fadeIn" style="color:#6C7A89;">STEM Executive Team</h2>
+        <div class="separator uwhite fadeIn" id="uabout"></div>
+        <p class="fadeIn">Directors and Core 5</p>
+      </div>
+      <div class="fadeIn" id="directors">
+        <img src="img/team.jpg" alt="Directors">
+      </div>
+
+    </div>
+
+    <!--CONFERENCE SECTION-->
+    <div class="section colored">
+
+      <a name="conference" class="anchor" id="CONFERENCE"></a>
+
+      <div>
+        <h1 class="fadeIn">Canadian Youth STEM Conference</h1>
+        <div class="separator ucolored fadeIn" id="uconference"></div>
+        <p class="fadeIn" style="font-size:2em;">May 25, 2017 | Pearson Convention Center</p>
+        <p class="fadeIn">Glenforest STEM is seeking sponsorship, hands-on STEM workshop
+          facilitators and STEM speakers for the conference. Please contact us at
+          info@glenforeststem.com if you and/or your organization is able to support
+          the conference.
+        </p>
+        <p class="fadeIn">Stay tuned for more information and follow us on
+          <a href="https://www.facebook.com/stemitup/" target="_blank">Facebook</a> and
+          <a href="https://twitter.com/gfss_STEM" target="_blank">Twitter</a>.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="section white">
+
+      <a name="conference2" class="anchor" id="CONFERENCE2"></a>
+
+      <div id="conferenceText">
+        <h1 class="fadeIn">Conferences</h1>
+
+        <div class="fadeIn confItem">
+          <div class="confText left">
+            <p>In November 2015, we hosted our first ever conference,
+               named the Xperience STEM Conference 2015.
+            </p>
+          </div>
+          <div class="confImage right">
+            <img src="img/aud.jpg" alt="Auditorium">
+          </div>
+        </div>
+
+        <div class="fadeIn confItem">
+          <div class="confImage left">
+            <img src="img/panel.jpg" alt="Panel">
+          </div>
+          <div class="confText right">
+            <p>We hosted 50 speakers and 20 workshops for over 1800 delegates,
+              showcasing them the various careers in the STEM Fields.
+            </p>
+          </div>
+        </div>
+
+        <div class="fadeIn confItem">
+          <div class="confText left">
+            <p>Our Xperience STEM Conference was Canada's largest student-run
+              conference, a huge success. We thank our sponsors and supporters
+              for the wonderful opportunity.</p>
+          </div>
+          <div class="confImage right">
+            <img src="img/booths.jpg" alt="Booths">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--SPONSOR SECTION-->
+    <div class="section colored">
+      <a name="sponsor" class="anchor" id="SPONSOR"></a>
+      <div>
+        <h1 class="fadeIn">Sponsors</h1>
+        <p class="fadeIn">For inquiries about sponsorship for our upcoming 2017 Conference, contact sponsors@glenforeststem.com</p>
+      </div>
+
+
+      <div class="fadeIn" id="sponsors">
+        <div>
+          <img src="img/sponsors.png" alt="Sponsors">
+        </div>
+      </div>
+    </div>
+
+    <!--CONTACT SECTION-->
+    <div class="section white">
+      <a name="contact" class="anchor" id="CONTACT"></a>
+      <div>
+        <h1 class="fadeIn">Contact</h1>
+        <p class="fadeIn">If you have any questions, please email us at info@glenforeststem.com.
+          Follow us on <a href="https://www.facebook.com/stemitup/" target="_blank">Facebook</a> and <a href="https://twitter.com/gfss_STEM" target="_blank">Twitter</a> for more information.</p>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="section colored">
+      <div>
+        <p>Made with <i class="em em-heart"></i> by the STEM Team</p>
+        <p style="font-size:0.75em;">Designed and Developed by Jacob Kelly</p>
+      </div>
+    </div>
+
+  </body>
+</html>
