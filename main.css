@@ -319,6 +319,24 @@ body{
   height:auto;
 }
 
+table{
+  margin:0 auto;
+  border-collapse: collapse;
+}
+
+table,th,tr{
+  border:1px solid white;
+}
+
+th{
+  color:white;
+  font-weight:normal;
+  font-size:1.25em;
+  vertical-align:middle;
+  padding:2%;
+  width:50%;
+}
+
 #conferenceText{
   margin:0 10%;
 }
