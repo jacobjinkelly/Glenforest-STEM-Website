@@ -14,6 +14,7 @@ if (window.jQuery){
     var contactAnchorPosition=$(contactAnchor).offset().top;
     var contactNav=$("#Contact").get();
     var eventsNav=$("#Events").get();
+    var announcementsNav=$("#Announcements").get();
     var top_window=$(window).scrollTop()+$(window).height()*0.08; //approximate proportion of anchor position and nav height
     if (top_window>aboutAnchorPosition){
       $(aboutNav).addClass('current');
@@ -21,6 +22,7 @@ if (window.jQuery){
       $(sponsorNav).removeClass('current');
       $(contactNav).removeClass('current');
       $(eventsNav).removeClass('current');
+      $(announcementsNav).removeClass('current');
     }
     else $(aboutNav).removeClass('current');
     if (top_window>conferenceAnchorPosition){
@@ -29,6 +31,7 @@ if (window.jQuery){
       $(sponsorNav).removeClass('current');
       $(contactNav).removeClass('current');
       $(eventsNav).removeClass('current');
+      $(announcementsNav).removeClass('current');
     }
     if (top_window>sponsorAnchorPosition){
       $(aboutNav).removeClass('current');
@@ -36,6 +39,7 @@ if (window.jQuery){
       $(sponsorNav).addClass('current');
       $(contactNav).removeClass('current');
       $(eventsNav).removeClass('current');
+      $(announcementsNav).removeClass('current');
     }
     if (top_window>contactAnchorPosition){
       $(aboutNav).removeClass('current');
@@ -43,6 +47,7 @@ if (window.jQuery){
       $(sponsorNav).removeClass('current');
       $(contactNav).addClass('current');
       $(eventsNav).removeClass('current');
+      $(announcementsNav).removeClass('current');
     }
     if (location.pathname.split(/[\\\/]+/).pop()=="events.html"){
       $(aboutNav).removeClass('current');
@@ -50,6 +55,15 @@ if (window.jQuery){
       $(sponsorNav).removeClass('current');
       $(contactNav).removeClass('current');
       $(eventsNav).addClass('current');
+      $(announcementsNav).removeClass('current');
+    }
+    if (location.pathname.split(/[\\\/]+/).pop()=="announcements.html"){
+      $(aboutNav).removeClass('current');
+      $(conferenceNav).removeClass('current');
+      $(sponsorNav).removeClass('current');
+      $(contactNav).removeClass('current');
+      $(eventsNav).removeClass('current');
+      $(announcementsNav).addClass('current');
     }
   });
 
