@@ -147,6 +147,11 @@ body{
   font-size:4em;
 }
 
+.colored h2{
+  color:white;
+  font-size:2em;
+}
+
 .colored a{
   text-decoration:underline;
   color:white;
