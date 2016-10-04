@@ -149,7 +149,7 @@ body{
 
 .colored h2{
   color:white;
-  font-size:2.5em;
+  font-size:2em;
 }
 
 .colored a{
@@ -311,7 +311,6 @@ body{
 table{
   margin:0 auto;
   border-collapse: collapse;
-  align
 }
 
 table,th,tr{
