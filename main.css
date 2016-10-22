@@ -204,6 +204,41 @@ body{
   border-color:#6C7A89;
 }
 
+#registerButton{
+  width:145px;
+  height:64px;
+  border-radius:5px;
+  line-height:1;
+  vertical-align: middle;
+}
+
+#registerButton p{
+  vertical-align:middle;
+  text-align:center;
+  font-size:1em;
+}
+
+.home #registerButton{
+  line-height:0.75;
+}
+
+.white #registerButton p{
+  color:white;
+}
+
+.white #registerButton , .home #registerButton{
+  background-color:#5C97BF;
+}
+
+.white #registerButton , .colored #registerButton{
+  margin:0 auto;
+  line-height:1.9;
+}
+
+.colored #registerButton{
+  background-color:#6C7A89;
+}
+
 #arrow{
   border-style:solid;
   width:30px;
