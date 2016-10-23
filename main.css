@@ -204,39 +204,46 @@ body{
   border-color:#6C7A89;
 }
 
-#registerButton{
+.registerButton{
+  display: block;
   width:145px;
   height:64px;
   border-radius:5px;
-  line-height:1;
-  vertical-align: middle;
+  margin:0 auto;
+  text-decoration:none !important;
 }
 
-#registerButton p{
-  vertical-align:middle;
+.registerButton div{
   text-align:center;
+}
+
+.registerButton p{
   font-size:1em;
+  text-decoration:none !important;
 }
 
-.home #registerButton{
-  line-height:0.75;
+.home .registerButton{
+  line-height:34px;
 }
 
-.white #registerButton p{
-  color:white;
+.colored .registerButton{
+  background-color:#6C7A89;
 }
 
-.white #registerButton , .home #registerButton{
+.white .registerButton , .home .registerButton{
   background-color:#5C97BF;
 }
 
-.white #registerButton , .colored #registerButton{
-  margin:0 auto;
-  line-height:1.9;
+.white .registerButton , .colored .registerButton{
+  line-height:62px;
 }
 
-.colored #registerButton{
-  background-color:#6C7A89;
+.white .registerButton p , .home .registerButton p{
+  color:white;
+}
+
+.registerButton:hover{
+  cursor: pointer;
 }
 
 #arrow{
