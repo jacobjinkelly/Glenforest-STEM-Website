@@ -418,3 +418,12 @@ th{
 #sponsors img{
   max-width:100%;
 }
+
+#moleDayContest div{
+  width:75%;
+  display:inline-block;
+}
+
+#moleDayContest img{
+  max-width:100%;
+}
