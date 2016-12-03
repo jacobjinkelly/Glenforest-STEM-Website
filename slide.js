@@ -1,6 +1,6 @@
-var posts=["nahani","mayor","stemposium","cpa","cisco","cityCouncil","olympics","outreach","healthTalk"];
-var indices=[0,0,0,0,0,0,0,0,0];
-var nposts=9;
+var posts=["nahani","itac","gtaa","mayor","stemposium","cpa","cisco","cityCouncil","olympics","outreach","healthTalk"];
+var indices=[0,0,0,0,0,0,0,0,0,0,0];
+var nposts=11;
 
 $(document).ready(function() {
   for (var i=0;i<nposts;i++) showDivs(posts[i],indices[i]);
