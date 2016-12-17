@@ -1,5 +1,7 @@
+//add id to posts, add item to indices, increment nposts
+
 var posts=["hourofcode", "nahani","itac","gtaa","mayor","stemposium","cpa","cisco","cityCouncil","olympics","outreach","healthTalk"];
-var indices=[0,0,0,0,0,0,0,0,0,0,0];
+var indices=[0,0,0,0,0,0,0,0,0,0,0,0];
 var nposts=12;
 
 $(document).ready(function() {
