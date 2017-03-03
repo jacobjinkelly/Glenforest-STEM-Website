@@ -368,55 +368,6 @@ th{
   width:50%;
 }
 
-#conferenceText{
-  margin:0 10%;
-}
-
-#conferenceText .left{
-  text-align:left;
-}
-
-#conferenceText .right{
-  text-align:right;
-}
-
-#conferenceText h1{
-  font-size:7em;
-}
-
-#conferenceText p{
-  font-size:2em;
-}
-
-#conferenceDetails{
-  margin:0 -20%;
-}
-
-#conferenceDetails .left{
-  text-align:left;
-}
-
-#conferenceDetails .right{
-  text-align:right;
-}
-
-#conferenceDetails h1{
-  font-size:5em;
-}
-
-#conferenceDetails h3{
-  font-size:3em;
-  color:white;
-}
-
-#conferenceDetails p{
-  font-size:2em;
-}
-
-#conferenceDetails .secondary p{
-  font-size:1.5em;
-}
-
 .confItem{
   width:100%;
   padding:5% 0;
@@ -437,6 +388,47 @@ th{
 
 .confImage img{
   max-width:90%;
+}
+
+#conferenceText{
+  margin:0 10%;
+}
+
+#conferenceText .left,#conferenceDetails .left{
+  text-align:left;
+}
+
+#conferenceText .right,#conferenceDetails .right{
+  text-align:right;
+}
+
+#conferenceText h1{
+  font-size:7em;
+}
+
+#conferenceText p{
+  font-size:2em;
+}
+
+#conferenceDetails{
+  margin:0 -20%;
+}
+
+#conferenceDetails h1{
+  font-size:5em;
+}
+
+#conferenceDetails h3{
+  font-size:3em;
+  color:white;
+}
+
+#conferenceDetails p{
+  font-size:2em;
+}
+
+#conferenceDetails .secondary p{
+  font-size:1.5em;
 }
 
 #sponsors div{
