@@ -388,6 +388,35 @@ th{
   font-size:2em;
 }
 
+#conferenceDetails{
+  margin:0 -20%;
+}
+
+#conferenceDetails .left{
+  text-align:left;
+}
+
+#conferenceDetails .right{
+  text-align:right;
+}
+
+#conferenceDetails h1{
+  font-size:5em;
+}
+
+#conferenceDetails h3{
+  font-size:3em;
+  color:white;
+}
+
+#conferenceDetails p{
+  font-size:2em;
+}
+
+#conferenceDetails .secondary p{
+  font-size:1.5em;
+}
+
 .confItem{
   width:100%;
   padding:5% 0;
