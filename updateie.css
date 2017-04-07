@@ -1,0 +1,11 @@
+div:not(.updateie){
+  display:none;
+}
+
+body{
+  position:relative;
+}
+
+.updateie{
+  margin:200px;
+}

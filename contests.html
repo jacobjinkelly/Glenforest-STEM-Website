@@ -5,8 +5,13 @@
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript">google.load("jquery", "1.3.2");</script>
-    <script type="text/javascript" src="core.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--[if lte IE 8]>
+	     <link rel="stylesheet" type="text/css" href="updateie.css" />
+    <![endif]-->
+    <!--[if !IE]><!-->
+      <script async type="text/javascript" src="core.js"></script>
+      <link rel="stylesheet" type="text/css" href="main.css">
+    <!--<![endif]-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:700,500">
     <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
     <meta name="title" content="Glenforest STEM">
@@ -77,7 +82,7 @@
 
         <p class="fadeIn">
             Design a Snapchat filter for the upcoming STEM Conference for the chance to win a $25 giftcard
-            to Tim Hortons. See <a href="img/snapchatContestRules.jpg" target="_blank">rules</a>. 
+            to Tim Hortons. See <a href="img/snapchatContestRules.jpg" target="_blank">rules</a>.
         </p>
 
         <div class="fadeIn" class="contest">
@@ -89,7 +94,7 @@
       </div>
 
       <div>
-        <h1 class="fadeIn">Past Contest</h1>
+        <h1 class="fadeIn">Past Contests</h1>
         <div class="separator uwhite fadeIn" style="width:300px"></div>
 
         <div class="fadeIn" class="contest">
