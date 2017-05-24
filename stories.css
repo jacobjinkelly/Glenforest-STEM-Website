@@ -1,0 +1,21 @@
+.confItem .left{
+  text-align:left;
+  margin-left: 1%;
+}
+
+.confItem .right{
+  text-align:right;
+}
+
+.confItem h1{
+  line-height:0.001;
+  font-size:3em;
+}
+
+.confItem h2{
+  font-size:1.25em;
+}
+
+.confItem p{
+  font-size:1em;
+}
