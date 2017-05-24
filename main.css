@@ -141,34 +141,29 @@ body{
   background-color:white;
 }
 
-.colored p{
+.colored p, .colored h1, .colored h2, .colored h3, .colored h4, .colored h5, .colored h6{
   color:white;
+}
+
+.white p, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6{
+  color:#6C7A89;
+}
+
+.colored p, .white p{
   font-size:1.25em;
 }
 
-.colored h1{
-  color:white;
+.colored h1, .white h1{
   font-size:4em;
 }
 
 .colored h2{
-  color:white;
   font-size:2em;
 }
 
 .colored a{
   text-decoration:underline;
   color:white;
-}
-
-.white p{
-  color:#6C7A89;
-  font-size:1.25em;
-}
-
-.white h1{
-  color:#6C7A89;
-  font-size:4em;
 }
 
 .white a{
