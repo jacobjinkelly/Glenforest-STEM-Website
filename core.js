@@ -15,7 +15,8 @@ if (window.jQuery){
     var contactNav=$("#Contact").get();
     var eventsNav=$("#Events").get();
     var announcementsNav=$("#Announcements").get();
-    var contestsNav=$("#Contests")
+    var contestsNav=$("#Contests").get()
+    var storiesNav=$("#Stories").get()
     var top_window=$(window).scrollTop()+$(window).height()*0.08; //approximate proportion of anchor position and nav height
     if (top_window>aboutAnchorPosition){
       $(aboutNav).addClass('current');
@@ -25,6 +26,7 @@ if (window.jQuery){
       $(eventsNav).removeClass('current');
       $(announcementsNav).removeClass('current');
       $(contestsNav).removeClass('current');
+      $(storiesNav).removeClass('current');
     }
     else $(aboutNav).removeClass('current');
     if (top_window>conferenceAnchorPosition){
@@ -35,6 +37,7 @@ if (window.jQuery){
       $(eventsNav).removeClass('current');
       $(announcementsNav).removeClass('current');
       $(contestsNav).removeClass('current');
+      $(storiesNav).removeClass('current');
     }
     if (top_window>sponsorAnchorPosition){
       $(aboutNav).removeClass('current');
@@ -44,6 +47,7 @@ if (window.jQuery){
       $(eventsNav).removeClass('current');
       $(announcementsNav).removeClass('current');
       $(contestsNav).removeClass('current');
+      $(storiesNav).removeClass('current');
     }
     if (top_window>contactAnchorPosition){
       $(aboutNav).removeClass('current');
@@ -53,6 +57,7 @@ if (window.jQuery){
       $(eventsNav).removeClass('current');
       $(announcementsNav).removeClass('current');
       $(contestsNav).removeClass('current');
+      $(storiesNav).removeClass('current');
     }
     if (location.pathname.split(/[\\\/]+/).pop()=="events.html"){
       $(aboutNav).removeClass('current');
@@ -62,6 +67,7 @@ if (window.jQuery){
       $(eventsNav).addClass('current');
       $(announcementsNav).removeClass('current');
       $(contestsNav).removeClass('current');
+      $(storiesNav).removeClass('current');
     }
     if (location.pathname.split(/[\\\/]+/).pop()=="announcements.html"){
       $(aboutNav).removeClass('current');
@@ -71,6 +77,7 @@ if (window.jQuery){
       $(eventsNav).removeClass('current');
       $(announcementsNav).addClass('current');
       $(contestsNav).removeClass('current');
+      $(storiesNav).removeClass('current');
     }
     if (location.pathname.split(/[\\\/]+/).pop()=="contests.html"){
       $(aboutNav).removeClass('current');
@@ -80,6 +87,17 @@ if (window.jQuery){
       $(eventsNav).removeClass('current');
       $(announcementsNav).removeClass('current');
       $(contestsNav).addClass('current');
+      $(storiesNav).removeClass('current');
+    }
+    if (location.pathname.split(/[\\\/]+/).pop()=="stories.html"){
+      $(aboutNav).removeClass('current');
+      $(conferenceNav).removeClass('current');
+      $(sponsorNav).removeClass('current');
+      $(contactNav).removeClass('current');
+      $(eventsNav).removeClass('current');
+      $(announcementsNav).removeClass('current');
+      $(contestsNav).removeClass('current');
+      $(storiesNav).addClass('current');
     }
   });
 
