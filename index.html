@@ -5,8 +5,13 @@
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <script type="text/javascript" src="http://www.google.com/jsapi" ></script>
     <script async type="text/javascript">google.load("jquery", "1.3.2");</script>
-    <script async type="text/javascript" src="core.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--[if lte IE 8]>
+	     <link rel="stylesheet" type="text/css" href="updateie.css" />
+    <![endif]-->
+    <!--[if !IE]><!-->
+      <script async type="text/javascript" src="core.js"></script>
+      <link rel="stylesheet" type="text/css" href="main.css">
+    <!--<![endif]-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:700,500">
     <link rel="stylesheet" type="text/css" href="https://afeld.github.io/emoji-css/emoji.css">
     <meta name="title" content="Glenforest STEM">
@@ -40,22 +45,13 @@
           <a href="#about" id="About">About</a>
         </div>
         <div class="item">
-          <a href="#conference" id="Conference">Conferences</a>
-        </div>
-        <div class="item">
-          <a href="#sponsor" id="Sponsor">Sponsors</a>
-        </div>
-        <div class="item">
           <a href="#contact" id="Contact">Contact</a>
         </div>
         <div class="item">
+          <a href="conferences.html" id="Conference">Past Conferences</a>
+        </div>
+        <div class="item">
           <a href="events.html" id="Events">Events</a>
-        </div>
-        <div class="item">
-          <a href="announcements.html" id="Announcements">Announcements</a>
-        </div>
-        <div class="item">
-          <a href="contests.html" id="Contests">Contests</a>
         </div>
         <div class="item">
           <a href="stories.html" id="Stories">Stories</a>
@@ -67,13 +63,10 @@
     <div class="section home" id="top">
 
       <!--#title for JS to find position of title and add .scrolled to nav bar-->
-      <div id="title" style="line-height:100%;">
-        <h1 style="font-size:7em;">
-          Glenforest STEM</h1>
-        <div class="separator ucolored" style="width:300px"></div>
-        <p style="font-size:2.5em;">Canadian Youth STEM Conference</p>
-        <p style="font-size:1.5em;">May 25, 2017 | Pearson Convention Center</p>
-        <p style="font-size:1em;">Tickets sold out!</p>
+      <div id="title">
+        <h1 style="font-size:8em;">Glenforest STEM</h1>
+        <p style="font-size:2em;">Promoting educational and career pathways in the STEM fields</p>
+        <br>
       </div>
       <div>
         <a href="#about"><div id="arrow"></div></a>
@@ -87,17 +80,16 @@
 
       <div>
         <h1 class="fadeIn">About</h1>
-        <div class="separator uwhite fadeIn" style="width:200px"></div>
-        <p class="fadeIn">Glenforest STEM organizes <a href="#conference">STEM Conferences</a>
+        <div class="separator fadeIn" style="width:200px"></div>
+        <p class="fadeIn">Glenforest STEM organizes <a href="conferences.html">STEM Conferences</a>
           and other <a href="events.html">events</a> to encourage and expose students to the
           educational and career pathways in the STEM fields. <a href="img/newsletter.pdf"
           target="_blank">Read our newsletter</a> detailing Glenforest STEM's various
-          activities. Learn more about the upcoming <a href="#conference">Canadian
-          Youth STEM Conference</a> on May 25, 2017 at the Pearson Convention Centre.
+          activities.
         </p>
 
         <h1 class="fadeIn">Meet the team</h1>
-        <div class="separator uwhite fadeIn" style="width:250px;"></div>
+        <div class="separator fadeIn" style="width:250px;"></div>
         <p class="fadeIn">Glenforest STEM is a group of passionate
             students from Glenforest Secondary School in the
             International Baccalaureate, Enhanced, and Academic
@@ -146,7 +138,7 @@
 
       <div>
         <h2 class="fadeIn" style="color:#6C7A89;">Full STEM Team</h2>
-        <div class="separator uwhite fadeIn" style="width:200px"></div>
+        <div class="separator fadeIn" style="width:200px"></div>
         <p class="fadeIn">Core 5, Directors, and Associates</p>
       </div>
       <div class="fadeIn" id="directors">
@@ -155,323 +147,8 @@
 
     </div>
 
-    <!--CONFERENCE SECTION-->
-    <div class="section colored">
-
-      <a name="conference" class="anchor" id="CONFERENCE"></a>
-
-      <div>
-        <h1 class="fadeIn">Canadian Youth STEM Conference 2017</h1>
-        <div class="separator ucolored fadeIn" style="width:300px"></div>
-        <p class="fadeIn" style="font-size:2em;">May 25, 2017 | Pearson Convention Center</p>
-
-        <p class="fadeIn">On April 11, <a href="events.html#Trudeau">Glenforest STEM visited Ottawa</a>
-          and had the pleasure of meeting and asking questions to Prime Minister Justin Trudeau,
-          Minister of Science Kirsty Duncan, and
-          Minister of Innovation, Science, and Economic Development Navdeep Bains.
-          Glenforest STEM would like to thank Greyhound for sponsoring and supporting this trip, and
-          MP Peter Fonseca, Mississauga City Councillor Chris Fonseca,
-          and GTAA VP Hillary Marshall for all of their help and support.
-        </p>
-
-        <img class="fadeIn" src="img/greyhound.png" style="width:500px;" alt="greyhound">
-
-        <blockquote class="fadeIn twitter-tweet tw-align-center" data-lang="en">
-          <p lang="en" dir="ltr">Amazing job, guys. Your leadership is already making a huge impact in this country. Hope to see you soon…
-            <a href="https://t.co/lVVo1RINin">https://t.co/lVVo1RINin</a>
-          </p>
-          &mdash; Justin Trudeau (@JustinTrudeau)
-          <a href="https://twitter.com/JustinTrudeau/status/812358561678454784">December 23, 2016</a>
-        </blockquote>
-        <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-        <p class="fadeIn">
-          Glenforest STEM is pleased to accept Prime Minister Justin Trudeau's recognition
-          of our hard work and impact. We too hope to see you soon!
-        </p>
-
-        <iframe class="fadeIn" width="560" height="315" src="https://www.youtube.com/embed/VXqII2noB8A" frameborder="0" allowfullscreen></iframe>
-
-        <p class="fadeIn">
-          Glenforest STEM is proud to invite Prime Minister Justin Trudeau to speak at the
-          Canadian Youth STEM Conference on May 25, 2017!
-        </p>
-
-        <p class="fadeIn">Tickets for the Conference are now sold out.</p>
-        <p class="fadeIn">Learn more about our upcoming conference through our
-          <a href="img/info.pdf" target="_blank">Information Pamphlet</a> and stay up to date through
-          the <a href="announcements.html">Announcements</a> page.
-        </p>
-        <p class="fadeIn">
-          Glenforest STEM is seeking sponsorship, hands-on STEM workshop
-          facilitators and STEM speakers for the conference. Please contact us at
-          info@glenforeststem.com if you and/or your organization is able to support
-          the conference.
-        </p>
-        <h1 class="fadeIn">Schedule</h1>
-        <table class="fadeIn">
-          <tr>
-            <th>8:45 am - 10:00 am</th>
-            <th>Registration</th>
-          </tr>
-          <tr>
-            <th>9:00 am - 10:05 am</th>
-            <th>Session 1 <br>Speakers/Workshops/Soft Skills/Speed Mentoring/Booths</th>
-          </tr>
-          <tr>
-            <th>10:15 am - 10:35 am</th>
-            <th>Opening Session</th>
-          </tr>
-          <tr>
-            <th>10:35 am - 11:05 am</th>
-            <th>Keynote Session</th>
-          </tr>
-          <tr>
-            <th>11:15 am - 12:20 pm</th>
-            <th>Session 2 <br>Speakers/Workshops/Soft Skills/Speed Mentoring/Booths</th>
-          </tr>
-          <tr>
-            <th>12:30 pm - 1:15 pm</th>
-            <th>Lunch</th>
-          </tr>
-          <tr>
-            <th>1:25 pm - 2:30 pm</th>
-            <th>Session 3 <br>Speakers/Workshops/Soft Skills/Speed Mentoring/Booths</th>
-          </tr>
-          <tr>
-            <th>2:40 pm - 3:45 pm</th>
-            <th>Session 4 <br>Speakers/Workshops/Soft Skills/Speed Mentoring/Booths</th>
-          </tr>
-          <tr>
-            <th>3:55 pm - 4:15 pm</th>
-            <th>Closing Session</th>
-          </tr>
-        </table>
-
-        <div id="conferenceDetails">
-
-          <div class="fadeIn confItem">
-            <div class="confText left primary">
-              <h1>Speakers</h1>
-            </div>
-            <div class="confText right secondary">
-              <h3>Keynote</h3>
-              <p>David Miller, CEO of World Wildlife Fund</p>
-              <p>Dr. Heather Sheardown, Canada Research Chair in Ophthalmic Biomaterials and Drug Delivery Systems,
-McMaster University Chemical Engineering Professor</p>
-              <h3>Opening</h3>
-              <p>Hillary Marshall, Greater Toronto Airport Authority</p>
-              <h3>Closing</h3>
-              <p>Chris Fonseca, Mississauga City Councillor<br>
-                Peter Fonseca, Member of Parliament</p>
-            </div>
-          </div>
-
-          <div class="fadeIn confItem">
-            <div class="confText left secondary">
-              <h3>Featuring:</h3>
-              <p>Actuarial Foundation Canada<br>
-                Chartered Professional Accounting<br>
-                City of Brampton<br>
-                Deloitte<br>
-                General Motors<br>
-                Greater Toronto Airport Authority<br>
-                Hydro One<br>
-                McMaster University Faculty of Engineering<br>
-                Professional Engineers of Ontario<br>
-                Siemens
-              </p>
-            </div>
-            <div class="confText right primary">
-              <h1>Speakers Forum</h1>
-              <p>Glenforest STEM will host a variety of inspirational speakers from the fields of STEM to inspire and motivate delegates
-                into pursuing their STEM profession.
-              </p>
-            </div>
-          </div>
-
-          <div class="fadeIn confItem">
-            <div class="confText left primary">
-              <h1>Workshops</h1>
-              <p>A set of hands-on activities hosted by  Ontario universities and industry leading companies along with our Glenforest
-                Robotics Team which will challenge students to work cooperatively to create a creative solution/product.
-              </p>
-            </div>
-            <div class="confText right secondary">
-              <h3>Featuring:</h3>
-              <p>Chartered Professional Accountants<br>
-                Engineers of Tomorrow<br>
-                First Robotics Team 6070<br>
-                GENEius Science<br>
-                Let's Talk Science<br>
-                McMaster University Faculty of Engineering<br>
-                Region of Peel<br>
-                University of Ontario Institute of Technology<br>
-                University of Toronto Engineering - Hi Skule<br>
-                University of Waterloo Faculty of Engineering<br>
-                University of Waterloo Faculty of Science
-              </p>
-            </div>
-          </div>
-
-          <div class="fadeIn confItem">
-            <div class="confText left secondary">
-              <h3>Facilitated by:</h3>
-              <p>Chartered Professional Accountant - Ontario</p>
-            </div>
-            <div class="confText right primary">
-              <h1>Soft Skills Develop&shy;ment</h1>
-              <p>Activities that will allow participants to initiate development of transferable skills that are highly desirable
-                in the workplace.
-              </p>
-            </div>
-          </div>
-
-          <div class="fadeIn confItem">
-            <div class="confText left primary">
-              <h1>Speed Mentoring</h1>
-              <p>A short one on one mentoring session in which students are given the opportunity to ask questions and interact with a
-                range of highly qualified STEM field professionals.
-              </p>
-            </div>
-            <div class="confText right secondary">
-              <h3>Featuring:</h3>
-              <p>Aercoustics Engineering Ltd<br>
-                City of Brampton<br>
-                City of Mississauga<br>
-                Dofasco<br>
-                Deloitte<br>
-                Ecker<br>
-                Foresters<br>
-                General Motors<br>
-                Lakeside Controls<br>
-                McMaster University - Engineering<br>
-                Ministry of Community Safety and Correctional Services<br>
-                Office of the Chief Coroner- Ontario<br>
-                ON Semiconductor<br>
-                Region of Peel - Public Works<br>
-                Siemens Canada<br>
-                University of Toronto - Mississauga - Physical Sciences<br>
-                University of Waterloo - School of Accounting and Finance<br>
-                University of Waterloo - Faculty of Science<br>
-                World Wildlife Fund
-              </p>
-            </div>
-          </div>
-
-          <div class="fadeIn confItem">
-            <div class="confText left secondary">
-              <h3>Featuring:</h3>
-              <p>Actuarial Foundation of Canada<br>
-                Beoringer<br>
-                Chartered Professional Accountants<br>
-                City of Brampton<br>
-                MakerSpace Brampton<br>
-                First Robotics<br>
-                Greater Toronto Airport Authority<br>
-                Hydro One<br>
-                Information Technology Association Of Canada<br>
-                Journal of Student Science and Technology<br>
-                Let's Talk Science<br>
-                Magna<br>
-                McMaster University - Faculty of Engineering<br>
-                McMaster University Faculty of Science<br>
-                NSERC<br>
-                Peel Environmental Youth Alliance<br>
-                Professional Engineers Ontario<br>
-                Ryerson University - Faculty of Engineering<br>
-                Ryerson University - Faculty of Science<br>
-                Siemens<br>
-                SHAD<br>
-                Sheridan College<br>
-                University of Ontario Institute of Technology<br>
-                University of Waterloo Faculty of Engineering<br>
-                University of Waterloo Faculty of Science<br>
-                World Wildlife Fund
-              </p>
-            </div>
-            <div class="confText right primary">
-              <h1>STEM Exhibitor Booths</h1>
-              <p>The various exhibitor booths will allow students to learn about various STEM organizations and the various STEM educational
-                and/or careers opportunities available.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-        <p class="fadeIn">
-            <br>
-            Stay tuned for more information and follow us on
-          <a href="https://www.facebook.com/stemitup/" target="_blank">Facebook</a> and
-          <a href="https://twitter.com/gfss_STEM" target="_blank">Twitter</a>.
-        </p>
-
-      </div>
-
-    </div>
-
-    <div class="section white">
-
-      <a name="conference2" class="anchor" id="CONFERENCE2"></a>
-
-      <div id="conferenceText">
-        <h1 class="fadeIn">Xperience STEM Conference 2015</h1>
-
-        <div class="fadeIn confItem">
-          <div class="confText left">
-            <p>In November 2015, we hosted our first ever conference,
-               named the Xperience STEM Conference 2015.
-            </p>
-          </div>
-          <div class="confImage right">
-            <img src="img/aud.jpg" alt="Auditorium">
-          </div>
-        </div>
-
-        <div class="fadeIn confItem">
-          <div class="confImage left">
-            <img src="img/panel.jpg" alt="Panel">
-          </div>
-          <div class="confText right">
-            <p>We hosted 50 speakers and 20 workshops for over 1800 delegates,
-              showcasing them the various careers in the STEM Fields.
-            </p>
-          </div>
-        </div>
-
-        <div class="fadeIn confItem">
-          <div class="confText left">
-            <p>Our Xperience STEM Conference was Canada's largest student-run
-              conference, a huge success. We thank our sponsors and supporters
-              for the wonderful opportunity.</p>
-          </div>
-          <div class="confImage right">
-            <img src="img/booths.jpg" alt="Booths">
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!--SPONSOR SECTION-->
-    <div class="section colored">
-      <a name="sponsor" class="anchor" id="SPONSOR"></a>
-      <div>
-        <h1 class="fadeIn">Sponsors</h1>
-        <p class="fadeIn">For inquiries about sponsorship for our upcoming 2017 Conference, contact info@glenforeststem.com</p>
-      </div>
-
-      <div class="fadeIn" id="sponsors">
-        <div>
-          <img src="img/sponsors.png" alt="Sponsors">
-        </div>
-      </div>
-    </div>
-
     <!--CONTACT SECTION-->
-    <div class="section white">
+    <div class="section colored">
       <a name="contact" class="anchor" id="CONTACT"></a>
       <div>
         <h1 class="fadeIn">Contact</h1>
@@ -481,7 +158,7 @@ McMaster University Chemical Engineering Professor</p>
     </div>
 
     <!--FOOTER-->
-    <div class="section colored">
+    <div class="section white">
       <div>
         <p>Made with <i class="em em-heart"></i> by the STEM Team</p>
         <p style="font-size:0.75em;">Developed by Jacob Kelly</p>

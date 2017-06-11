@@ -5,9 +5,14 @@
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript">google.load("jquery", "1.3.2");</script>
-    <script async type="text/javascript" src="core.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="stories.css">
+    <!--[if lte IE 8]>
+	     <link rel="stylesheet" type="text/css" href="updateie.css" />
+    <![endif]-->
+    <!--[if !IE]><!-->
+      <script async type="text/javascript" src="core.js"></script>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet" type="text/css" href="stories.css">
+    <!--<![endif]-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:700,500">
     <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
     <meta name="title" content="Glenforest STEM">
@@ -17,11 +22,18 @@
           educational and career pathways in the STEM fields.">
     <meta name="author" content="Jacob Kelly">
     <meta charset="utf-8">
-    <title>Glenforest STEM | Events</title>
+    <title>Glenforest STEM | Stories</title>
   </head>
 
   <body>
-    <a name="events" class="anchor" id="EVENTS"></a>
+    <div class="updateie">
+      <p>Hello there! It appears you are using a version of Internet Explorer of version 8 or lower,
+        of which our website is uncompatible with. Please update Internet Explorer to version 9 or
+        higher in order to access our site. Thank you!
+      </p>
+    </div>
+    
+    <a name="stories" class="anchor"></a>
 
     <!--NAV BAR-->
     <div id="nav">
@@ -35,25 +47,16 @@
           <a href="index.html#about" id="About">About</a>
         </div>
         <div class="item">
-          <a href="index.html#conference" id="Conference">Conferences</a>
-        </div>
-        <div class="item">
-          <a href="index.html#sponsor" id="Sponsor">Sponsors</a>
-        </div>
-        <div class="item">
           <a href="index.html#contact" id="Contact">Contact</a>
         </div>
         <div class="item">
-          <a href="#events" id="Events">Events</a>
+          <a href="conferences.html" id="Conference">Past Conferences</a>
         </div>
         <div class="item">
-          <a href="announcements.html" id="Announcements">Announcements</a>
+          <a href="events.html" id="Events">Events</a>
         </div>
         <div class="item">
-          <a href="contests.html" id="Contests">Contests</a>
-        </div>
-        <div class="item">
-          <a href="#first" id="Stories">Stories</a>
+          <a href="#stories" id="Stories">Stories</a>
         </div>
       </div>
     </div>
@@ -63,7 +66,7 @@
       <!--#title for JS to find position of title and add .scrolled to nav bar-->
       <div id="title">
         <h1 style="font-size:7em;">STEM Stories</h1>
-        <p style="font-size:2em;"> Scroll down to learn more about the people behind Glenforest STEM</p>
+        <p style="font-size:2em;">Learn more about the people behind Glenforest STEM</p>
         <br>
       </div>
 

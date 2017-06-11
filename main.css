@@ -161,6 +161,21 @@ body{
   font-size:2em;
 }
 
+.separator{
+  height:1px;
+  border-width:1px;
+  border-style:solid;
+  margin:0 auto;
+}
+
+.colored .separator{
+  border-color:white;
+}
+
+.white .separator{
+  border-color:#6C7A89;
+}
+
 .colored a{
   text-decoration:underline;
   color:white;
@@ -186,63 +201,6 @@ body{
 #top div{
   margin:0 auto;
   text-align:center;
-}
-
-.separator{
-  height:1px;
-  border-width:1px;
-  border-style:solid;
-  margin:0 auto;
-}
-
-.ucolored{
-  border-color:white;
-}
-
-.uwhite{
-  border-color:#6C7A89;
-}
-
-.registerButton{
-  display: block;
-  width:145px;
-  height:64px;
-  border-radius:5px;
-  margin:0 auto;
-  text-decoration:none !important;
-}
-
-.registerButton div{
-  text-align:center;
-}
-
-.registerButton p{
-  font-size:1em;
-  text-decoration:none !important;
-}
-
-.home .registerButton{
-  line-height:34px;
-}
-
-.colored .registerButton{
-  background-color:#6C7A89;
-}
-
-.white .registerButton , .home .registerButton{
-  background-color:#5C97BF;
-}
-
-.white .registerButton , .colored .registerButton{
-  line-height:62px;
-}
-
-.white .registerButton p , .home .registerButton p{
-  color:white;
-}
-
-.registerButton:hover{
-  cursor: pointer;
 }
 
 #arrow{
@@ -349,24 +307,6 @@ body{
   height:auto;
 }
 
-table{
-  margin:0 auto;
-  border-collapse: collapse;
-}
-
-table,th,tr{
-  border:1px solid white;
-}
-
-th{
-  color:white;
-  font-weight:normal;
-  font-size:1.25em;
-  vertical-align:middle;
-  padding:2%;
-  width:50%;
-}
-
 .confItem{
   width:100%;
   padding:5% 0;
@@ -419,7 +359,6 @@ th{
 
 #conferenceDetails h3{
   font-size:3em;
-  color:white;
 }
 
 #conferenceDetails p{
@@ -436,14 +375,5 @@ th{
 }
 
 #sponsors img{
-  max-width:100%;
-}
-
-.contest div{
-  width:75%;
-  display:inline-block;
-}
-
-.contest img{
   max-width:100%;
 }
