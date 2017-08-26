@@ -130,7 +130,15 @@ body{
 }
 
 .colored{
-  background-image:url("img/graphic bg.png");
+  background-image:url("img/graphic bg.png"); <!--background-->
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+}
+
+.test{
+  background-image: url("img/AOT.png");
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:cover;
