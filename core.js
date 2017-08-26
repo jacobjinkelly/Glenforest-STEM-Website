@@ -4,16 +4,12 @@ if (window.jQuery){
     var aboutAnchor=$("#ABOUT").get();
     var aboutAnchorPosition=$(aboutAnchor).offset().top;
     var aboutNav=$("#About").get();
-
     var contactAnchor=$("#CONTACT").get();
     var contactAnchorPosition=$(contactAnchor).offset().top;
     var contactNav=$("#Contact").get();
-
     var conferenceNav=$("#Conference").get();
     var eventsNav=$("#Events").get();
-    var storiesNav=$("#Stories").get();
-    var testtabNav=$("#TestTab").get();
-
+    var storiesNav=$("#Stories").get()
     var top_window=$(window).scrollTop()+$(window).height()*0.08; //approximate proportion of anchor position and nav height
     if (top_window>aboutAnchorPosition){
       $(aboutNav).addClass('current');
@@ -21,7 +17,6 @@ if (window.jQuery){
       $(conferenceNav).removeClass('current');
       $(eventsNav).removeClass('current');
       $(storiesNav).removeClass('current');
-      $(testtabNav).removeClass('current');
     }
     else $(aboutNav).removeClass('current');
     if (top_window>contactAnchorPosition){
@@ -30,7 +25,6 @@ if (window.jQuery){
       $(conferenceNav).removeClass('current');
       $(eventsNav).removeClass('current');
       $(storiesNav).removeClass('current');
-      $(testtabNav).removeClass('current');
     }
     if (location.pathname.split(/[\\\/]+/).pop()=="conferences.html"){
       $(aboutNav).removeClass('current');
@@ -38,7 +32,6 @@ if (window.jQuery){
       $(conferenceNav).addClass('current');
       $(eventsNav).removeClass('current');
       $(storiesNav).removeClass('current');
-      $(testtabNav).removeClass('current');
     }
     if (location.pathname.split(/[\\\/]+/).pop()=="events.html"){
       $(aboutNav).removeClass('current');
@@ -46,7 +39,6 @@ if (window.jQuery){
       $(conferenceNav).removeClass('current');
       $(eventsNav).addClass('current');
       $(storiesNav).removeClass('current');
-      $(testtabNav).removeClass('current');
     }
     if (location.pathname.split(/[\\\/]+/).pop()=="stories.html"){
       $(aboutNav).removeClass('current');
@@ -54,15 +46,6 @@ if (window.jQuery){
       $(conferenceNav).removeClass('current');
       $(eventsNav).removeClass('current');
       $(storiesNav).addClass('current');
-      $(testtabNav).removeClass('current');
-    }
-    if (location.pathname.split(/[\\\/]+/).pop()=="testtab.html"){
-      $(aboutNav).removeClass('current');
-      $(contactNav).removeClass('current');
-      $(conferenceNav).removeClass('current');
-      $(eventsNav).removeClass('current');
-      $(storiesNav).removeClass('current');
-      $(testtabNav).addClass('current');
     }
   });
 
