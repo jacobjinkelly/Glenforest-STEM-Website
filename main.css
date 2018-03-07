@@ -129,6 +129,14 @@ body{
   background-position:center;
 }
 
+.nahani{
+  background-image:url("img/nahaniback.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+}
+
 .colored{
   background-image:url("img/graphic bg.png");
   background-repeat:no-repeat;
@@ -244,7 +252,7 @@ body{
   opacity:0;
   position:relative;
   top:500px;
-  margin:20px;
+  margin:40px;
   display:inline-block;
   -webkit-transition:all 1s cubic-bezier(0,0,0,1);
   -moz-transition:all 1s cubic-bezier(0,0,0,1);
