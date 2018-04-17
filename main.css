@@ -137,6 +137,14 @@ body{
   background-position:center;
 }
 
+.xplore{
+  background-image:url("img/xploreback3.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+}
+
 .colored{
   background-image:url("img/graphic bg.png");
   background-repeat:no-repeat;
@@ -383,5 +391,15 @@ body{
 }
 
 #sponsors img{
+  max-width:100%;
+}
+
+#partners div{
+  width:30%;
+  display:inline-block;
+}
+
+
+#partners img{
   max-width:100%;
 }
