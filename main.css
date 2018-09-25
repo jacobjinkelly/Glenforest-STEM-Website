@@ -49,6 +49,11 @@ body{
   text-align:left;
 }
 
+#center{
+  width:49%;
+  text-align:center;
+}
+
 #right{
   width:50%;
   text-align:right;
@@ -62,6 +67,80 @@ body{
   -moz-transition:padding 0.5s linear;
   -o-transition:padding 0.5s linear;
   transition:padding 0.5s linear;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);
+.snip1431 {
+  font-family: 'Raleway', Arial, sans-serif;
+  border: none;
+  background-color: #5666a5;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0px 30px;
+  display: block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  line-height: 46px;
+  font-weight: 400;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  border-radius: 23px;
+  letter-spacing: 2px;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1431:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: inherit;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.snip1431:after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  content: '';
+  border-radius: inherit;
+}
+.snip1431:hover,
+.snip1431.hover {
+  background-color: #5666a5;
+  color: #ffffff;
+}
+.snip1431:hover:before,
+.snip1431.hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  opacity: 0.25;
+}
+
+#block {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    border: none;
+    padding: 14px 180px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
 }
 
 #logo img{
@@ -138,6 +217,14 @@ body{
 }
 
 .xplore{
+  background-image:url("img/xploreback3.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+}
+
+.confHelp{
   background-image:url("img/xploreback3.jpg");
   background-repeat:no-repeat;
   background-attachment:fixed;
@@ -351,6 +438,9 @@ body{
 
 #conferenceText .left,#conferenceDetails .left{
   text-align:left;
+}
+#conferenceText .center,#conferenceDetails .center{
+  text-align:center;
 }
 
 #conferenceText .right,#conferenceDetails .right{

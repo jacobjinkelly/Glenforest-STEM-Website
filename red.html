@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="image_src" href="img/icon.png" />
+    <meta property="og:image"           content="http://www.glenforeststem.com/img/icon300.png" />
+    <script type="text/javascript" src="http://www.google.com/jsapi" ></script>
+    <script async type="text/javascript">google.load("jquery", "1.3.2");</script>
+    <!--[if lte IE 8]>
+	     <link rel="stylesheet" type="text/css" href="updateie.css" />
+    <![endif]-->
+    <!--[if !IE]><!-->
+      <script async type="text/javascript" src="core.js"></script>
+      <link rel="stylesheet" type="text/css" href="main.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:700,500">
+    <link rel="stylesheet" type="text/css" href="https://afeld.github.io/emoji-css/emoji.css">
+    <meta name="title" content="Glenforest STEM">
+    <meta name="description"
+        content="Glenforest STEM organizes STEM Conferences
+          and other events to encourage and expose students to the
+          educational and career pathways in the STEM fields.">
+    <meta name="author" content="Jacob Kelly">
+    <meta charset="utf-8">
+    <title>Glenforest STEM</title>
+  </head>
+  <body>
+    <div class="updateie">
+      <p>Hello there! It appears you are using a version of Internet Explorer of version 8 or lower,
+        of which our website is uncompatible with. Please update Internet Explorer to version 9 or
+        higher in order to access our site. Thank you!
+      </p>
+    </div>
+
+    <a name="home" class="anchor"></a>
+
+    <!--NAV BAR-->
+    <div id="nav">
+      <div id="left">
+        <div id="logo">
+          <a href="#home" id="Home"><img src="img/logo.svg"></a>
+        </div>
+      </div>
+    </div>
+
+    <!--HOME SECTION-->
+    <div class="section confHelp" id="top">
+      <!--#title for JS to find position of title and add .scrolled to nav bar-->
+        <div id="title">
+          <h1 style="font-size:4em;">Group Red:</h1>
+          <h1 id="location" style="font-size:2em;"></h1>
+          <h1 id="activity" style="font-size:3em;"><h1>
+          <article id="image"></article>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="section white" style="padding-top: 0px;padding-bottom: 0px;">
+        <div id="im">
+          <img src="img/OpusAdiuvareLogo.png" style="width: 200px;">
+        </div>
+    </div>
+
+    <script>
+        var currentTime = new Date();
+        var activity;
+
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+
+        //var hours = 10;
+        //var minutes = 24;
+
+        var showHours;
+        var showMinutes;
+
+        // User Friendly Display for time
+        if (hours > 12) {
+          showHours = hours - 12;
+        }
+        else {
+          showHours = hours;
+        }
+
+        if (minutes < 10) {
+          showMinutes = "0" + minutes;
+        }
+        else {
+          showMinutes = minutes;
+        }
+
+        //Algorithm to find Activity
+        if (hours == 9) {
+          if (minutes < 20) {
+            activity = "Check-in";
+            document.getElementById("image").innerHTML="<img src='img/CHECKIN.png' style='width: 350px;'>";
+          }
+          else if (minutes < 40) {
+            activity = "Opening";
+            document.getElementById("image").innerHTML="<img src='img/OPENING.png' style='width: 350px;'>";
+          }
+          else if (minutes < 45) {
+            activity = "Break";
+            document.getElementById("image").innerHTML="<img src='img/BREAK.png' style='width: 350px;'>";
+          }
+          else {
+            activity = "Keynote";
+            document.getElementById("image").innerHTML="<img src='img/LUNCH.png' style='width: 350px;'>";
+          }
+        }
+        else if (hours == 10) {
+          if (minutes < 50) {
+            activity = "Keynote";
+            document.getElementById("image").innerHTML="<img src='img/LUNCH.png' style='width: 350px;'>";
+          }
+          else {
+            activity = "Transition"
+            document.getElementById("image").innerHTML="<img src='img/Transition.png' style='width: 350px;'>";
+          }
+        }
+        else if (hours == 11) {
+          if (minutes < 10){
+            activity = "Transition";
+            document.getElementById("image").innerHTML="<img src='img/Transition.png' style='width: 350px;'>";
+          }
+          else if (minutes < 55) {
+            activity = "Booths";
+            document.getElementById("image").innerHTML="<img src='img/BOOTHS.png' style='width: 350px;'>";
+          }
+          else {
+            activity = "Transition";
+            document.getElementById("image").innerHTML="<img src='img/Transition.png' style='width: 350px;'>";
+          }
+        }
+        else if (hours == 12) {
+          if (minutes < 10) {
+            activity = "Transition";
+            document.getElementById("image").innerHTML="<img src='img/Transition.png' style='width: 350px;'>";
+          }
+          else if (minutes < 55) {
+            activity = "Lunch";
+            document.getElementById("image").innerHTML="<img src='img/OPENING.png' style='width: 350px;'>";
+          }
+          else {
+            activity = "Transition";
+            document.getElementById("image").innerHTML="<img src='img/Transition.png' style='width: 350px;'>";
+          }
+        }
+        else if (hours == 13) {
+          if (minutes < 15) {
+            activity = "Transition";
+            document.getElementById("image").innerHTML="<img src='img/Transition.png' style='width: 350px;'>";
+          }
+          else {
+            activity = "Workshops";
+            document.getElementById("image").innerHTML="<img src='img/Workshop.png' style='width: 350px;'>";
+          }
+        }
+        else if (hours == 14) {
+          if (minutes < 15) {
+            activity = "Transition";
+            document.getElementById("image").innerHTML="<img src='img/Transition.png' style='width: 350px;'>";
+          }
+          else {
+            activity = "Speakers";
+            document.getElementById("image").innerHTML="<img src='img/Workshop.png' style='width: 350px;'>";
+          }
+        }
+        else if (hours >= 15) {
+          activity = "The Conference Has Ended";
+          document.getElementById("image").innerHTML="<img src='img/Ended.png' style='width: 350px;'>";
+        }
+        else {
+          activity = "The Conference Has Not Started";
+          document.getElementById("image").innerHTML="<img src='img/Started.png' style='width: 350px;'>";
+        }
+
+        //Printing Javascript functionality on Webpage
+        document.getElementById("location").innerHTML = "The time is "+showHours+":"+showMinutes+". You are supposed to be at: ";
+        document.getElementById("activity").innerHTML = activity;
+
+    </script>
+
+  </body>
+</html>
